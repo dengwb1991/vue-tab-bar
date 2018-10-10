@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import VueTabBar from './TabBar'
+import DwbVueTab from './TabBar'
 
 new Vue({
   el: '#app',
   components: {
-    VueTabBar
+    DwbVueTab
   },
   data () {
     return {

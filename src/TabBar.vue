@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'VueTabBar',
+  name: 'DwbVueTab',
   data () {
     return {
       liWidth: 0,

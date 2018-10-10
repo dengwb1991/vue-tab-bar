@@ -1,16 +1,16 @@
-# vue-tab-bar
+# dwb-vue-tab
 
-[![](https://img.shields.io/badge/vue-2.x-green.svg)](https://github.com/dengwb1991/vue-tab-bar)
-[![](https://img.shields.io/npm/v/vue-tab-bar.svg?style=flat)](https://www.npmjs.com/package/vue-tab-bar)
-[![](https://img.shields.io/npm/dt/vue-tab-bar.svg)](https://www.npmjs.com/package/vue-tab-bar)
-[![](https://img.shields.io/github/stars/dengwb1991/vue-tab-bar.svg?style=social&label=Stars)](https://github.com/dengwb1991/vue-tab-bar)
+[![](https://img.shields.io/badge/vue-2.x-green.svg)]()
+[![](https://img.shields.io/npm/v/dwb-vue-tab.svg?style=flat)](https://www.npmjs.com/package/vue-tab-bar)
+[![](https://img.shields.io/npm/dt/dwb-vue-tab.svg)](https://www.npmjs.com/package/dwb-vue-tab)
+[![](https://img.shields.io/github/stars/dengwb1991/vue-tab-bar.svg?style=social&label=Stars)]()
 
 <img src="http://vuetool.dengwb.com/static/ezgif-1-b585a4936364.gif" width="200"/>
 
 ## Install
 
 ``` bash
-npm i vue-tab-bar --save
+npm i dwb-vue-tab --save
 ```
 
 ## Mount
@@ -19,7 +19,7 @@ npm i vue-tab-bar --save
 
 ``` javascript
 import Vue from 'vue'
-import TabBar from 'vue-tab-bar'
+import TabBar from 'dwb-vue-tab'
 
 Vue.use(TabBar)
 ```
@@ -27,11 +27,11 @@ Vue.use(TabBar)
 ### mount with component
 
 ``` javascript
-import { VueTabBar } from 'vue-tab-bar'
+import { DwbVueTab } from 'dwb-vue-tab'
 
 export default {
   components: {
-    VueTabBar
+    DwbVueTab
   }
 }
 ```
@@ -69,7 +69,7 @@ callback | (activated element) | execute when switching activation elements
 
 ```html
 <template>
-    <VueTabBar :data="tabs"
+    <DwbVueTab :data="tabs"
                :active.sync="active"
                :initCallback="initCallback"
                @callback="getData"/>

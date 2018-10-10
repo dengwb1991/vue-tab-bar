@@ -6,10 +6,10 @@ let Tab = require('./src/TabBar.vue')
 Tab = Tab.default || Tab
 
 export default {
-  VueTabBar: Tab,
+  DwbVueTab: Tab,
   install: (Vue) => {
     Vue.component(Tab.name, Tab)
   }
 }
 
-export const VueTabBar = Tab
+export const DwbVueTab = Tab
