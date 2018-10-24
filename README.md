@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/vue-2.x-green.svg)]()
 [![](https://img.shields.io/npm/v/dwb-vue-tab.svg?style=flat)](https://www.npmjs.com/package/vue-tab-bar)
 [![](https://img.shields.io/npm/dt/dwb-vue-tab.svg)](https://www.npmjs.com/package/dwb-vue-tab)
-[![](https://img.shields.io/github/stars/dengwb1991/vue-tab-bar.svg?style=social&label=Stars)]()
+[![](https://img.shields.io/github/stars/dengwb1991/vue-tab-bar.svg?style=social&label=Stars)](https://github.com/dengwb1991/vue-tab-bar)
 
 <img src="http://vuetool.dengwb.com/static/ezgif-1-b585a4936364.gif" width="200"/>
 

@@ -18,6 +18,13 @@
   "dependencies": {
     "vue": "^2.5.16"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dengwb1991/vue-tab-bar"
+  },
+  "homePage": {
+    "url": "http://vuetool.dengwb.com/#/tab"
+  },
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^7.1.1",
