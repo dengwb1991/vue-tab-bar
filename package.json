@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "tab"
+    "url": "https://github.com/dengwb1991/vue-tab-bar"
   },
   "homePage": {
     "url": "http://vuetool.dengwb.com/#/tab"
