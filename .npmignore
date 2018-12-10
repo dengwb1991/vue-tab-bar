@@ -1,0 +1,6 @@
+build/
+config/
+src/
+index.html
+index.js
+package-lock.json
