@@ -1,6 +1,6 @@
 {
   "name": "dwb-vue-tab",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "tab",
   "main": "./dist/app.bundle.min.js",
   "scripts": {
