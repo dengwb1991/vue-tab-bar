@@ -256,7 +256,7 @@ export default {
   position: absolute;
   bottom: 0px;
   left: 0;
-  transition: all 0.4s ease;
+  transition: left 0.4s ease;
 }
 li {
   width: 100%;
