@@ -10,7 +10,7 @@ new Vue({
     return {
       tabs: ['Tab', 'Bar'],
       active: 0,
-      initCallback: true,
+      initCallback: true
     }
   },
   methods: {

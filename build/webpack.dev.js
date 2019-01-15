@@ -18,6 +18,7 @@ const configuration = merge(common, {
 })
 configuration.plugins = configuration.plugins.concat([
   new webpack.HotModuleReplacementPlugin(),
+  new webpack.NamedModulesPlugin(),
   new HtmlWebpackPlugin({
     filename: 'index.html',
     template: 'index.html',
