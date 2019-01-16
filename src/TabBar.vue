@@ -160,7 +160,6 @@ export default {
       }
     },
     underlineStyle () {
-      console.log(this.lineWidth)
       return {
         width: !this.lineWidth ? `${this.liWidth}px` : this.lineWidth,
         height: this.lineHeight,
