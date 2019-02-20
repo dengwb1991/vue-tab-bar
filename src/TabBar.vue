@@ -185,7 +185,7 @@ export default {
     doTouchMove (event) {
       if (this.data.length <= 4) return
       event.preventDefault()
-      const surplusWidth = this.surplusWidth
+      const surplusWidth = this.surplusWidth = Math.abs(this.surplusWidth)
 
       let transX = event.touches[0].pageX - this.tabsIns.X
       if (surplusWidth + event.touches[0].pageX - this.tabsIns.X < 0) {
@@ -196,6 +196,7 @@ export default {
       this.tabTransX = transX
     },
     doTouchEnd (event) {
+      if (!this.tabTransX && this.data.length <= 4) return
       if (this.tabTransX > 0) {
         this.tabTransX = 0
       } else if (this.tabTransX < -this.surplusWidth) {
