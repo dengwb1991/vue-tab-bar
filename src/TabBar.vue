@@ -211,7 +211,9 @@ export default {
       this.liWidth = this.$refs.tab[0].offsetWidth
     },
     getLineRealWidth () {
-      this.lineRealWidth = this.$refs.line && (this.$refs.line.offsetWidth || this.$refs.tab[0].offsetWidth)
+      // this.lineRealWidth = this.$refs.line && (this.$refs.line.offsetWidth || this.$refs.tab[0].offsetWidth)
+      this.lineRealWidth = this.$refs.line && this.$refs.tab[0].offsetWidth
+      console.log(this.$refs.tab[0].offsetWidth)
     },
     tabPlace () {
       this.tabTransition = '-webkit-transform 0.4s linear 0s'
@@ -241,17 +243,31 @@ export default {
     },
     getCurrData () {
       this.$emit('callback', this.data[this.activeIndex])
+    },
+    init () {
+      this.getLiWidth()
+      this.getLineRealWidth()
+      this.tabPlace()
+
+      this.initCallback && this.getCurrData()
+      setTimeout(() => {
+        this.lineTransition = { transition: 'left 0.4s ease' }
+      })
+    }
+  },
+  watch: {
+    data: {
+      handler () {
+        setTimeout(() => {
+          this.activeIndex = 0
+          this.init()
+        }, 400)
+      },
+      deep: true
     }
   },
   mounted () {
-    this.getLiWidth()
-    this.getLineRealWidth()
-    this.tabPlace()
-
-    this.initCallback && this.getCurrData()
-    setTimeout(() => {
-      this.lineTransition = { transition: 'left 0.4s ease' }
-    })
+    this.init()
   }
 }
 </script>

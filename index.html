@@ -13,9 +13,15 @@
     <meta name="x5-orientation" content="portrait">
     <meta name="author" content="邓文斌,dengwb1991,13720017500">
     <title>Vue Tab Bar</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
+      <button @click="tap">添加数据</button>
       <dwb-vue-tab :data="tabs"
                    :active.sync="active"
                    :init-callback="initCallback"

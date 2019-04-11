@@ -16,6 +16,9 @@ new Vue({
   methods: {
     getData (res) {
       console.log(res)
+    },
+    tap () {
+      this.tabs = ['Tab', 'Bar', 'Tab1', 'Bar2', 'Tab1', 'Bar2']
     }
   }
 })
